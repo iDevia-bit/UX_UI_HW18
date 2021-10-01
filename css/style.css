@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+}
+
+header {
+  background-color: gray;
+  padding: 0px;
+}
+
+header ul {
+  float: right;
+  color: white;
+}
+
+header li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+header p {
+  display: inline-block;
+  font-family: "Raleway script=latin";
+  font-weight: 50;
+  font-style: normal;
+  line-height: initial;
+}
+
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 0px 0px;
+}
+
+.card {
+  position: center;
+  margin: 35px auto;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 25px;  
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+HTML CSSResult Skip Results Iframe
+* {
+  box-sizing: border-box;
+}
+  
+.cardContainer {
+  margin-top: 20px;
+}
+
+.card {
+  margin: 0 auto;
+}
+
+.content{
+  padding: 50px;
+}
+
+.sectionHeading{
+  text-align: center;
+}
+
+.showsNear {
+  padding: 0px 30px 30px 30px;
+}
+
+.cardContainer{
+ text-align: center;
+}
+
+#mySkills-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;  
+}
+
+#mySkills-container > h1 {
+  width: 100%;
+  flex-basis: 100%;
+  align-self: flex-start;
+  text-align: center;
+}
+  
+.skill-item {
+  position: relative;
+  border: maroon solid 5px;
+  width: 31%;
+  max-width: 600px;
+  min-height: max-content;
+  margin: 2% 1%;
+  padding: 2% 3%;
+}
+  
+.skill-item > img { 
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+  
+.skill-item > h2,p {
+text-align: center;
+}
+  
+@media only screen and (max-width: 640px) {
+  .skill-item {
+  flex-direction: column;
+  width: 100%;
+  }
+}
+
+button {
+padding: 5px;
+background-color: #373738;
+color: white;
+border-radius: 4px;
+}
+
+footer {
+background-color: gray;
+padding: 5px;
+color: white;
+}
+
+footer ul {
+list-style: none;
+padding-left: 5px;
+float: right;
+}
+
+footer li {
+display: inline-block;
+padding: 0px 10px;
+}
+  
