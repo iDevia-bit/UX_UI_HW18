@@ -30,59 +30,70 @@ header p {
   padding: 0px 0px;
 }
 
-.card {
-  position: center;
-  margin: 35px auto;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  padding: 25px;  
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Mockup1 CS-Details1"
+    "CS-Details2 Mockup2"
+    "Mockup3 CS-Details3";
 }
 
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #FFFFFF;
-  text-align: center;
+.Mockup1 { 
+  grid-area: Mockup1;
+  justify-self: center;
 }
+
+.Mockup2 { 
+  grid-area: Mockup2;  
+  justify-self: center;
+}
+
+.Mockup3 { 
+  grid-area: Mockup3; 
+  justify-self: center;
+}
+
+.CS-Details1 { 
+  grid-area: CS-Details1; 
+  justify-self: center;
+  align-self: center;
+}
+
+.CS-Details2 { 
+  grid-area: CS-Details2; 
+  justify-self: center;
+  align-self: center;
+}
+
+.CS-Details3 {
+  grid-area: CS-Details3;
+  justify-self: center;
+  align-self: center;
+}
+
 
 HTML CSSResult Skip Results Iframe
 * {
   box-sizing: border-box;
-}
-  
-.cardContainer {
-  margin-top: 20px;
-}
-
-.card {
-  margin: 0 auto;
-}
-
-.content{
-  padding: 50px;
 }
 
 .sectionHeading{
   text-align: center;
 }
 
-.showsNear {
-  padding: 0px 30px 30px 30px;
-}
-
-.cardContainer{
- text-align: center;
-}
-
 #mySkills-container {
-  width: 100%;
+  width: 96%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  align-content: stretch;  
+  align-content: stretch;
+  padding: 0% 2% 0% 2%;  
 }
 
 #mySkills-container > h1 {
@@ -95,10 +106,9 @@ HTML CSSResult Skip Results Iframe
 .skill-item {
   position: relative;
   border: maroon solid 5px;
-  width: 31%;
+  width: 25%;
   max-width: 600px;
   min-height: max-content;
-  margin: 2% 1%;
   padding: 2% 3%;
 }
   
