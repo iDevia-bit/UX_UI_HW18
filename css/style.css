@@ -1,10 +1,27 @@
 body {
-    margin: 0;
+  margin: 0;
+}
+
+.navbar-nav{
+  position: absolute;
+  width: auto 0px;
+  height: 64px;
+  left: 50px;
+  top: 50px;
+  margin: initial;
+}
+
+.logo{
+  position: right;
+  left: 85%;
+  right: 5%;
+  top: 5%;
+  bottom: 5%;
 }
 
 header {
-  background-color: gray;
-  padding: 0px;
+  background-color: white;
+  padding: 10px;
 }
 
 header ul {
@@ -22,12 +39,13 @@ header p {
   font-family: "Raleway script=latin";
   font-weight: 50;
   font-style: normal;
-  line-height: initial;
+  line-height: 50;
 }
 
 .heroImg {
   background-color: #EBEBEB;
-  padding: 0px 0px;
+  padding: 20px 300px;
+  align-self: stretch;
 }
 
 .container {
@@ -37,52 +55,53 @@ header p {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "Mockup1 CS-Details1"
-    "CS-Details2 Mockup2"
-    "Mockup3 CS-Details3";
+  "Mockup1 Work1"
+  "Work2 Mockup2"
+  "Mockup3 Work3"
 }
 
 .Mockup1 { 
   grid-area: Mockup1;
   justify-self: center;
+  align-self: center;
 }
 
 .Mockup2 { 
   grid-area: Mockup2;  
   justify-self: center;
+  align-self: center;
 }
 
 .Mockup3 { 
   grid-area: Mockup3; 
   justify-self: center;
+  align-self: center;
 }
 
-.CS-Details1 { 
-  grid-area: CS-Details1; 
+.Work1 { 
+  grid-area: Work1; 
   justify-self: center;
   align-self: center;
 }
 
-.CS-Details2 { 
-  grid-area: CS-Details2; 
+.Work2 { 
+  grid-area: Work2; 
   justify-self: center;
   align-self: center;
 }
 
-.CS-Details3 {
-  grid-area: CS-Details3;
+.Work3 {
+  grid-area: Work3;
   justify-self: center;
   align-self: center;
-}
-
-
-HTML CSSResult Skip Results Iframe
-* {
-  box-sizing: border-box;
 }
 
 .sectionHeading{
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #mySkills-container {
@@ -91,9 +110,8 @@ HTML CSSResult Skip Results Iframe
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
-  align-content: stretch;
-  padding: 0% 2% 0% 2%;  
+  align-items: baseline;
+  align-content: stretch; 
 }
 
 #mySkills-container > h1 {
@@ -105,23 +123,23 @@ HTML CSSResult Skip Results Iframe
   
 .skill-item {
   position: relative;
-  border: maroon solid 5px;
+  border: grey 5px;
   width: 25%;
   max-width: 600px;
   min-height: max-content;
-  padding: 2% 3%;
+  margin: 2% 3%;
 }
   
 .skill-item > img { 
   display: block;
-  width: 200px;
+  width: 150px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: baseline;
 }
   
 .skill-item > h2,p {
-text-align: center;
+  text-align: center;
 }
   
 @media only screen and (max-width: 640px) {
@@ -139,9 +157,9 @@ border-radius: 4px;
 }
 
 footer {
-background-color: gray;
+background-color: white;
 padding: 5px;
-color: white;
+color: black;
 }
 
 footer ul {
@@ -152,6 +170,6 @@ float: right;
 
 footer li {
 display: inline-block;
-padding: 0px 10px;
+padding: 10px 10px;
 }
   
